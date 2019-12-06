@@ -6,6 +6,6 @@ import { Link } from "gatsby";
 
 // myComponents
 
-const Menu = () => <h1>O nas</h1>;
+const Menu = () => <h1>Menu</h1>;
 
 export default Menu;
