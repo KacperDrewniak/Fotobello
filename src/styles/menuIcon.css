@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+div.menuIcon {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: red;
+  right: 200px;
+}
+
+div.menuIcon div {
+  width: 100%;
+  height: 33%;
+  margin: 10px;
+}
+/*# sourceMappingURL=menuIcon.css.map */
