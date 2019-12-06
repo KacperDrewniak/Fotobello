@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  z-index: 899;
+  position: fixed;
+  background-color: #ffffff;
+  height: 200px;
+  top: 0;
+  right: 200px;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #1F1F1F;
+  border-top: 2px #1F1F1F solid;
+}
+
+nav ul.links {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul.links li {
+  padding: 20px;
+  margin: 20px;
+}
+
+nav ul.links li a {
+  color: #1F1F1F;
+  text-decoration: none;
+  -webkit-transition-duration: color;
+          transition-duration: color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+nav ul.links li :hover {
+  color: #a0a0a0;
+}
+
+nav ul.social {
+  list-style-type: none;
+  padding: 20px;
+  margin: 20px;
+}
+
+nav ul.social li a {
+  color: #1F1F1F;
+  text-decoration: none;
+  -webkit-transition-duration: color;
+          transition-duration: color;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+nav ul.social li :hover {
+  color: #a0a0a0;
+}
+/*# sourceMappingURL=NavbarStyle.css.map */

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap')
+
+// Import Variables
+
+@import "./Variables.sass"
+
+// Navbars
+nav
+    transition-property: background-color
+    transition-duration: 1s
+    z-index: 899
+    position: fixed
+    background-color: $whiteColor
+    height: $widthOfNav
+    top: 0
+    right: $widthOfNav
+    transform-origin: top right
+    transform: rotate(-90deg)
+    width: 100vh
+    display: flex
+    justify-content: space-between
+    color: $primaryColor
+    border-top: 2px $primaryColor solid
+
+    ul.links
+        list-style-type: none
+        display: flex
+        li
+            padding: 20px
+            margin: 20px
+            a
+                color: $primaryColor
+                text-decoration: none
+                transition-duration: color
+                transition-duration: 1s
+            & :hover
+                color: $greyColor
+    ul.social
+        list-style-type: none
+        padding: 20px
+        margin: 20px
+        li
+            a
+                color: $primaryColor
+                text-decoration: none
+                transition-duration: color
+                transition-duration: .4s
+            & :hover
+                color: $greyColor

@@ -1,0 +1,9 @@
+h1.logo {
+  z-index: 901;
+  position: fixed;
+  color: #1F1F1F;
+  top: 100px;
+  left: 100px;
+  font-size: 50px;
+}
+/*# sourceMappingURL=logo.css.map */
