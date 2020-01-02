@@ -4,7 +4,7 @@ import "../styles/NavbarStyle.css";
 
 const Navbar = () => (
   <nav>
-    <ul class="links">
+    <ul className="links">
       <li>
         <a>
           <Link to="/">Porftfolio</Link>
@@ -21,7 +21,7 @@ const Navbar = () => (
         </a>
       </li>
     </ul>
-    <ul class="social">
+    <ul className="social">
       <li>
         <a href="#">Facebook</a>
       </li>

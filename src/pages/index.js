@@ -9,6 +9,7 @@ import Navbar from "../components/navbar";
 import Logo from "../components/logo";
 import NameCategory from "../components/nameCategory";
 import MenuIcon from "../components/menuIcon";
+import Images from "../components/images";
 
 // Style
 
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <Logo />
     <NameCategory />
     <MenuIcon />
+    <Images />
   </>
 );
 

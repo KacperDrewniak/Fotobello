@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/home/kacpi/Dokumenty/GitHub_Projects/Fotobello/node_modules/gatsby-plugin-load-script/gatsby-ssr'),
+      options: {"plugins":[],"disable":true,"src":"https://browser.sentry-cdn.com/5.5.0/bundle.min.js","onLoad":"() => Sentry.init({dsn:\"undefined\"})"},
+    },{
       plugin: require('/home/kacpi/Dokumenty/GitHub_Projects/Fotobello/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{

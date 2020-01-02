@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,AAAA,WAAW,CAAC;EACV,UAAU,EAAE,IAAI;EAChB,QAAQ,EAAE,KAAK;EACf,SAAS,EAAE,IAAI;EACf,IAAI,EAAE,GAAG;EACT,GAAG,EAAE,GAAG;EACR,SAAS,EAAE,qBAAoB;CAGV;;AATzB,AAOI,EAPF,AAAA,WAAW,CAOT,EAAE,CAAC;EACC,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,IAAI;CAAG",
+    "sources": [
+        "categoryList.sass"
+    ],
+    "names": [],
+    "file": "categoryList.css"
+}

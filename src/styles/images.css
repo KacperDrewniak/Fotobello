@@ -1,0 +1,14 @@
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.images img {
+  width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 10px;
+}
+/*# sourceMappingURL=images.css.map */
