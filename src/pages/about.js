@@ -13,6 +13,7 @@ import ScreenDarker from "../components/screenDarker";
 
 const About = () => (
   <>
+    <Logo />s
     <ScreenDarker />
     <Navbar />
     <AboutMe />

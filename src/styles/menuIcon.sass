@@ -9,9 +9,28 @@ div.menuIcon
     right: $widthOfNav + 10px
     display: flex
     flex-direction: column
-
+    transition: .3s
     div
-        background-color: black
+        background-color: $primaryColor
         height: 4px
         margin: 3px
         border-radius: 2px
+        transition: .3s
+
+        &:nth-child(1)
+            transform-origin: top right
+        &:nth-child(3)
+            transform-origin: bottom right
+    &:hover
+        div:nth-child(2)
+
+            background-color: transparent
+        div:nth-child(1)
+
+            transform: rotate(-37deg)
+        div:nth-child(3)
+
+            transform: rotate(37deg)
+
+    &.click
+        right: 40px

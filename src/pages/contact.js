@@ -6,12 +6,16 @@ import { Link } from "gatsby";
 
 // myComponents
 import Navbar from "../components/navbar";
-import MenuIcon from "../components/menuIcon";
 import Logo from "../components/logo";
-import AboutMe from "../components/aboutMe";
+import NameCategory from "../components/nameCategory";
+import MenuIcon from "../components/menuIcon";
+import Images from "../components/images";
+import ScreenDarker from "../components/screenDarker";
 
 const About = () => (
   <>
+    <Logo />
+    <ScreenDarker />
     <Navbar />
     <menuIcon />
   </>

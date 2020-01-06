@@ -23,12 +23,44 @@ div.menuIcon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 div.menuIcon div {
-  background-color: black;
+  background-color: #1F1F1F;
   height: 4px;
   margin: 3px;
   border-radius: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+div.menuIcon div:nth-child(1) {
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+div.menuIcon div:nth-child(3) {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+div.menuIcon:hover div:nth-child(2) {
+  background-color: transparent;
+}
+
+div.menuIcon:hover div:nth-child(1) {
+  -webkit-transform: rotate(-37deg);
+          transform: rotate(-37deg);
+}
+
+div.menuIcon:hover div:nth-child(3) {
+  -webkit-transform: rotate(37deg);
+          transform: rotate(37deg);
+}
+
+div.menuIcon.click {
+  right: 40px;
 }
 /*# sourceMappingURL=menuIcon.css.map */
