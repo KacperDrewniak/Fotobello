@@ -23,7 +23,7 @@ const Navbar = () => (
     </ul>
     <ul className="social">
       <li>
-        <a href="#">Facebook</a>
+        <a href="https://www.facebook.com/fotobello/">Facebook</a>
       </li>
       <li>
         <a href="#">Instagram</a>

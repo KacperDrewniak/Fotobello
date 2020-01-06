@@ -1,0 +1,27 @@
+
+@import "./Variables.sass"
+
+.darker
+    position: fixed
+    z-index: 1000
+    width: 100vw
+    height: 100vh
+    background-color: $primaryColor
+    transform: translateY(-30%)
+    animation: downToUp  both 2.4s 3s
+    &:after
+        content: ""
+        height: 100vh
+        width: 2px
+        background-color: white
+        right: $widthOfNav + 13px
+        z-index: 1001
+        position: fixed
+
+// Animation
+
+@keyframes downToUp
+    0%
+        transform: translateY(0)
+    100%
+        transform: translateY(-100%)

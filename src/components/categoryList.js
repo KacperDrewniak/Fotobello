@@ -1,14 +1,26 @@
 import React from "react";
 import "../styles/categoryList.css";
+import { StaticQuery, graphql } from "gatsby";
 
 const CategoryList = () => (
-  <ul className="categories">
-    <li>Kategoria1</li>
-    <li>Kategoria2</li>
-    <li>Kategoria3</li>
-    <li>Kategoria4</li>
-    <li>Kategoria5</li>
-  </ul>
+  <StaticQuery
+    query={graphql`
+      query {
+        swapi {
+          categories {
+            title
+          }
+        }
+      }
+    `}
+    render={({ swapi: { categories } }) => (
+      <ul className="categories">
+        {categories.map(category => (
+          <li>{category.title}</li>
+        ))}
+      </ul>
+    )}
+  />
 );
 
 export default CategoryList;

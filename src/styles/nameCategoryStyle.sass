@@ -1,6 +1,17 @@
-h1.nameCategory
+// Import Variables
+
+@import "./Variables.sass"
+
+h1.nameCategory,h1.nameCategoryCopy
     position: fixed
     bottom: 20px
     font-size: 200px
     width: 75%
     text-align: center
+    z-index: -1
+    color: $primaryColor
+
+h1.nameCategoryCopy
+    z-index: 1
+    color: transparent
+    -webkit-text-stroke: 2px $primaryColor

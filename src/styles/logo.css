@@ -1,9 +1,52 @@
-h1.logo {
+h1.logo, h1.logoCopy {
   z-index: 901;
   position: fixed;
   color: #1F1F1F;
   top: 100px;
   left: 100px;
   font-size: 50px;
+}
+
+h1.logoCopy {
+  color: white;
+  top: 100px;
+  left: 100px;
+  z-index: 1001;
+  -webkit-animation: logoDownToUp  4s 2s both;
+          animation: logoDownToUp  4s 2s both;
+}
+
+@-webkit-keyframes logoDownToUp {
+  0% {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  75% {
+  }
+  100% {
+    -webkit-transform: translate(0, -300%);
+            transform: translate(0, -300%);
+  }
+}
+
+@keyframes logoDownToUp {
+  0% {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  75% {
+  }
+  100% {
+    -webkit-transform: translate(0, -300%);
+            transform: translate(0, -300%);
+  }
 }
 /*# sourceMappingURL=logo.css.map */

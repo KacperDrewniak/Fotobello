@@ -1,0 +1,30 @@
+aside {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+aside h1 {
+  font-size: 60px;
+}
+
+aside img {
+  width: 500px;
+}
+
+aside p {
+  width: 400px;
+}
+/*# sourceMappingURL=aboutMe.css.map */

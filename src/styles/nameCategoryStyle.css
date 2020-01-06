@@ -1,8 +1,27 @@
-h1.nameCategory {
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1.nameCategory, h1.nameCategoryCopy {
   position: fixed;
   bottom: 20px;
   font-size: 200px;
   width: 75%;
   text-align: center;
+  z-index: -1;
+  color: #1F1F1F;
+}
+
+h1.nameCategoryCopy {
+  z-index: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px #1F1F1F;
 }
 /*# sourceMappingURL=nameCategoryStyle.css.map */
