@@ -8,3 +8,27 @@ ul.categories
     li
         box-sizing: border-box
         margin: 60px
+        animation: liFromLeftToRight 2s  both
+        position: relative
+        &:nth-child(1)
+            animation-delay: 4.2s
+        &:nth-child(2)
+            animation-delay: 4.4s
+        &:nth-child(3)
+            animation-delay: 4.6s
+        &:nth-child(4)    
+            animation-delay: 4.7s
+        &:nth-child(5)
+            animation-delay: 4.8s
+        &:nth-child(6)
+            animation-delay: 5s
+        &:nth-child(7)
+            animation-delay: 5.2s
+        &:nth-child(8)
+    
+@keyframes liFromLeftToRight
+    0%
+        opacity: 0
+        transform: translateX(-50%)
+    100%
+        transform: translateX(0)
