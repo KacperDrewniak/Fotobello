@@ -1,3 +1,5 @@
+@import "./Variables.sass"
+
 ul.categories
     list-style: none
     position: fixed
@@ -5,7 +7,15 @@ ul.categories
     left: 50%
     top: 50%
     transform: translate(-50%,-50%)
-    li
+    li  
+        a
+            color: $primaryColor
+            text-decoration: none
+            position: relative
+            
+            transition: 1s 
+        a:hover
+            padding-left: 20px
         box-sizing: border-box
         margin: 60px
         animation: liFromLeftToRight 2s  both
@@ -31,4 +41,4 @@ ul.categories
         opacity: 0
         transform: translateX(-50%)
     100%
-        transform: translateX(0)
+        

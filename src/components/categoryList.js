@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/categoryList.css";
 import { StaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 
 const CategoryList = () => (
   <StaticQuery
@@ -9,6 +10,13 @@ const CategoryList = () => (
         swapi {
           categories {
             title
+            titleName
+            images {
+              fileName
+              handle
+              width
+              height
+            }
           }
         }
       }
@@ -16,7 +24,9 @@ const CategoryList = () => (
     render={({ swapi: { categories } }) => (
       <ul className="categories">
         {categories.map(category => (
-          <li>{category.title}</li>
+          <li>
+            <Link to={`/${category.titleName}`}>{category.title}</Link>
+          </li>
         ))}
       </ul>
     )}

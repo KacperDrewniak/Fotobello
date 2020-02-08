@@ -5,6 +5,7 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
+  "component---src-templates-category-template-js": hot(preferDefault(require("/home/kacpi/Dokumenty/GitHub_Projects/Fotobello/src/templates/categoryTemplate.js"))),
   "component---cache-dev-404-page-js": hot(preferDefault(require("/home/kacpi/Dokumenty/GitHub_Projects/Fotobello/.cache/dev-404-page.js"))),
   "component---src-pages-about-js": hot(preferDefault(require("/home/kacpi/Dokumenty/GitHub_Projects/Fotobello/src/pages/about.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("/home/kacpi/Dokumenty/GitHub_Projects/Fotobello/src/pages/contact.js"))),

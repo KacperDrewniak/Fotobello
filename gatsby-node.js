@@ -9,6 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
       swapi {
         categories {
           title
+          titleName
           images {
             fileName
             handle
@@ -28,7 +29,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
   categoriesQuery.data.swapi.categories.forEach(category => {
     createPage({
-      ca
+      path: category.titleName,
+      component: categoryTemplate,
+      context: {
+        data: category
+      }
     });
   });
   console.log("-----------");
