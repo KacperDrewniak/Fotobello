@@ -7,7 +7,7 @@
     width: 100vw
     height: 100vh
     background-color: $primaryColor
-    transform: translateY(-30%)
+
     animation: downToUp  both 2.4s 3s
     &:after
         content: ""
@@ -25,3 +25,9 @@
         transform: translateY(0)
     100%
         transform: translateY(-100%)
+
+@keyframes upToDown
+    0%
+        transform: translateY(-100%)
+    100%
+        transform: translateY(0)

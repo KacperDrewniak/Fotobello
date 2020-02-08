@@ -6,12 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-page-load-delay`,
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      }
-    },
+
     {
       resolve: "gatsby-source-graphql",
       options: {
@@ -41,7 +36,7 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
-    `gatsby-transformer-sharp`,
+
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

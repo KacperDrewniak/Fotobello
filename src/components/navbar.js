@@ -2,13 +2,21 @@ import React from "react";
 import { Link } from "gatsby";
 import "../styles/NavbarStyle.css";
 
+const exit = () => {
+  document.querySelector("div.darker").style.animationName = "upToDown";
+  document.querySelector("div.darker").style.animationDelay = "0s";
+};
+
 const Navbar = () => (
   <nav>
     <ul className="links">
       <li>
         <a
           onClick={() => {
-            window.location.assign("/");
+            exit();
+            setTimeout(() => {
+              window.location = "/";
+            }, 2400);
           }}
         >
           Portfiolio
@@ -16,22 +24,57 @@ const Navbar = () => (
         </a>
       </li>
       <li>
-        <a>
-          <Link to="/about">About</Link>
+        <a
+          onClick={() => {
+            exit();
+            setTimeout(() => {
+              window.location = "/about";
+            }, 2400);
+          }}
+        >
+          About
+          {/* <Link to="/">Porftfolio</Link> */}
         </a>
       </li>
       <li>
-        <a>
-          <Link to="/contact">Contact</Link>
+        <a
+          onClick={() => {
+            exit();
+            setTimeout(() => {
+              window.location = "/contact";
+            }, 2400);
+          }}
+        >
+          Contact
+          {/* <Link to="/">Porftfolio</Link> */}
         </a>
       </li>
     </ul>
     <ul className="social">
       <li>
-        <a href="https://www.facebook.com/fotobello/">Facebook</a>
+        <a
+          onClick={() => {
+            exit();
+            setTimeout(() => {
+              window.location = "https://www.facebook.com/fotobello";
+            }, 2400);
+          }}
+        >
+          Facebook
+          {/* <Link to="/">Porftfolio</Link> */}
+        </a>
       </li>
       <li>
-        <a href="#">Instagram</a>
+        <a
+          onClick={() => {
+            exit();
+            setTimeout(() => {
+              window.location = "https://www.facebook.com/fotobello";
+            }, 2400);
+          }}
+        >
+          Instagram
+        </a>
       </li>
     </ul>
   </nav>

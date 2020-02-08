@@ -15,8 +15,6 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #1F1F1F;
-  -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
   -webkit-animation: downToUp  both 2.4s 3s;
           animation: downToUp  both 2.4s 3s;
 }
@@ -50,6 +48,28 @@ body {
   100% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes upToDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes upToDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=screenDarker.css.map */

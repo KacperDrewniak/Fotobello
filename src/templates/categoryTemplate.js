@@ -9,6 +9,8 @@ import CategoryList from "../components/categoryList";
 import ScreenDarker from "../components/screenDarker";
 import NameCategory from "../components/nameCategory";
 
+import "../styles/template.css";
+
 const categoryTemplate = data => (
   <>
     <ScreenDarker />
@@ -17,7 +19,7 @@ const categoryTemplate = data => (
     <Logo />
     <NameCategory name={data.pageContext.data.title} />
     {console.log(data)}
-    <div>
+    <div className="div-images">
       {data.pageContext.data.images.map(image => (
         <GraphImg image={image} />
       ))}

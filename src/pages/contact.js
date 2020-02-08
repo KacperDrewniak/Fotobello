@@ -11,14 +11,16 @@ import NameCategory from "../components/nameCategory";
 import MenuIcon from "../components/menuIcon";
 import Images from "../components/images";
 import ScreenDarker from "../components/screenDarker";
+import Form from "../components/form.js";
 
-const About = () => (
+const Contact = () => (
   <>
     <Logo />
     <ScreenDarker />
     <Navbar />
-    <menuIcon />
+    <MenuIcon />
+    <Form />
   </>
 );
 
-export default About;
+export default Contact;
