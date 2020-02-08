@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-page-load-delay`,
-    `gatsby-plugin-transition-link`,
+
     {
       resolve: "gatsby-source-graphql",
       options: {

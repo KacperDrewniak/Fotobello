@@ -6,8 +6,13 @@ const Navbar = () => (
   <nav>
     <ul className="links">
       <li>
-        <a>
-          <Link to="/">Porftfolio</Link>
+        <a
+          onClick={() => {
+            window.location.assign("/");
+          }}
+        >
+          Portfiolio
+          {/* <Link to="/">Porftfolio</Link> */}
         </a>
       </li>
       <li>

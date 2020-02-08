@@ -49,6 +49,7 @@ nav ul.links li {
 }
 
 nav ul.links li a {
+  cursor: pointer;
   color: #1F1F1F;
   text-decoration: none;
   -webkit-transition-duration: color;

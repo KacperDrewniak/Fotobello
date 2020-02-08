@@ -1,8 +1,37 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require(`path`);
 
-// You can delete this file if you're not using it
-// exports.createPages =
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+  const categoryTemplate = path.resolve(`src/templates/categoryTemplate.js`);
+
+  const categoriesQuery = await graphql(`
+    query {
+      swapi {
+        categories {
+          title
+          images {
+            fileName
+            handle
+            width
+            height
+          }
+        }
+      }
+    }
+  `);
+
+  console.log("-----------");
+  console.log("-----------");
+  console.log("-----------");
+
+  console.log(categoriesQuery.data.swapi.categories);
+
+  categoriesQuery.data.swapi.categories.forEach(category => {
+    createPage({
+      ca
+    });
+  });
+  console.log("-----------");
+  console.log("-----------");
+  console.log("-----------");
+};

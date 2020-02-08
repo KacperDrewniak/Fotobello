@@ -22,10 +22,6 @@ import MainContent from "../components/mainContent";
 class IndexPage extends Component {
   state = {};
 
-  componentDidMount() {
-    // Set delay in milliseconds
-    window.pageExitTime = 1000;
-  }
   render() {
     return (
       <>
