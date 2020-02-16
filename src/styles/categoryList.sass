@@ -7,26 +7,32 @@ ul.categories
     left: 50%
     top: 50%
     transform: translate(-50%,-50%)
-    li  
-        a
-            color: $primaryColor
-            text-decoration: none
-            position: relative
-            
-            transition: 1s 
-        a:hover
-            padding-left: 20px
-        box-sizing: border-box
-        margin: 60px
+    li
         animation: liFromLeftToRight 2s  both
         position: relative
+        color: $primaryColor
+        margin: 30px 0
+        cursor: pointer
+        transition: .3s
+
+        &:hover
+            margin-left: 30px
+        //     text-decoration: none
+        //     position: relative
+
+        // a:hover
+        //     padding-left: 20px
+        //     box-sizing: border-box
+        //     margin: 60px
+
+        //     position: relative
         &:nth-child(1)
             animation-delay: 4.2s
         &:nth-child(2)
             animation-delay: 4.4s
         &:nth-child(3)
             animation-delay: 4.6s
-        &:nth-child(4)    
+        &:nth-child(4)
             animation-delay: 4.7s
         &:nth-child(5)
             animation-delay: 4.8s
@@ -35,10 +41,10 @@ ul.categories
         &:nth-child(7)
             animation-delay: 5.2s
         &:nth-child(8)
-    
+
 @keyframes liFromLeftToRight
     0%
         opacity: 0
         transform: translateX(-50%)
     100%
-        
+        transform: translateX(0%)
